@@ -305,10 +305,19 @@ hr.divider {
 .mission-grid { display: grid; grid-template-columns: 130px 1fr; gap: 4rem; align-items: start; }
 .mission-label { font-family: 'Space Mono', monospace; font-size: 0.68rem; letter-spacing: 0.2em; color: var(--text-dim); text-transform: uppercase; padding-top: 0.35rem; }
 
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 1rem;
+}
+
 .owner-card {
     display: grid; grid-template-columns: auto 1fr; gap: 2.5rem; align-items: center;
     background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px;
-    padding: 2.5rem; max-width: 620px; text-decoration: none; transition: border-color 0.3s, box-shadow 0.3s;
+    padding: 2.5rem; text-decoration: none; transition: border-color 0.3s, box-shadow 0.3s;
 }
 .owner-card:hover { border-color: var(--border-hard); box-shadow: 0 0 60px rgba(79,142,247,0.08); }
 
